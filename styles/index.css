@@ -1,0 +1,183 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 50px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.logo {
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.dots {
+    display: none;
+}
+
+.logo-and-dots {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 10px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    list-style-type: none;
+    margin-right: 28px;
+}
+
+.stylenav {
+    color: #242635;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-container-1 {
+    flex-wrap: wrap;
+    min-height: 500px;
+    max-width: 420px;
+    width: 100%
+}
+
+.main-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 90px;
+    color: #242635;
+}
+
+.main-text {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color: #242635;
+}
+
+.arrow {
+    margin-top: 160px;
+}
+
+.main-container-2 {
+    flex-wrap: wrap;
+}
+
+.img {
+    min-height: 650px;
+    max-width: 580px;
+    width: 100%;
+}
+
+/* 650 px */
+
+@media screen and (max-width: 650px) {
+    .header-container {
+        max-width: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+} /* i thought it looked good with the nav underneath the logo */
+
+@media screen and (max-width: 650px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-container-1 {
+        min-height: 350px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-title {
+        font-size: 60px;
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width: 650px) {
+    .main-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .arrow {
+        display: none;
+        margin: 0;
+    }
+}
+
+/* 400 px */
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .nav ul li {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .dots {
+        display: block;
+        justify-content: flex-end; /* this didnt work out like i thought it would so i added margin-left instead */
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .main-container-1 {
+        min-height: 350px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .main-container-2 {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .img {
+        max-width: auto;
+        height: auto;
+    }
+}
