@@ -1,3 +1,11 @@
+/* Upload a webpage to your webhost. You can choose any of the previous projects you have created. 
+The point is to practice uploading a local project to a live remote server. 
+You should also check the Lighthouse report for the webpage and try to optimize the page as much as possible. 
+When you are done, send the link to the live page to your teacher. 
+You can choose any uploading method you want such as FileZilla together with 000webhost, 
+Netlify, GitHub Pages, or other. */
+
+
 .header {
     display: flex;
     justify-content: center;
